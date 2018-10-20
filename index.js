@@ -30,7 +30,7 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setTitle("😎 **Propozycje !**")
                 .setDescription("Na tym kanale można zgłaszać swoje propozycje dodania rzeczy do Discorda.")
-                .setFooter(Zakaz trollowania, 60 sekund opóźnienia.)
+                .setFooter("Zakaz trollowania, 60 sekund opóźnienia.")
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
