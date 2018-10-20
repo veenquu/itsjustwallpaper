@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The best dank discord bot hell yeah",
   "main": "index.js",
-  "scripts": {
-    start": "node bot.js
+"scripts": {
+    "start": "node bot.js"
   },
   "author": "Me",
   "license": "ISC",
