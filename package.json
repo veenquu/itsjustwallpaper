@@ -4,7 +4,7 @@
   "description": "The best dank discord bot hell yeah",
   "main": "index.js",
 "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "author": "Me",
   "license": "ISC",
