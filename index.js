@@ -28,9 +28,9 @@ bot.on("message", function(message) {
             break;
         case "embed":
             var embed = new Discord.RichEmbed()
-                .setTitle("📝 **Regulamin serwera !**")
-                .setDescription("**1.** Nie postuj rzeczy **NSFW** poza kanalami NSFW \n**2.** Zakaz reklamowania innych discordów stron www itp. \n**3.** Zakaz wyzywania użytkowników oraz administracji. \n**4.**  Zakaz wklejania podejrzanych linków lub reflinków.")
-                .setFooter("Regulamin może być edytowany bez powiadomienia o tym członków Discorda.")
+                .setTitle("😎 **Propozycje !**")
+                .setDescription("Na tym kanale można zgłaszać swoje propozycje dodania rzeczy do Discorda.")
+                .setFooter(Zakaz trollowania, 60 sekund opóźnienia.)
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
