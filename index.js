@@ -28,9 +28,8 @@ bot.on("message", function(message) {
             break;
         case "embed":
             var embed = new Discord.RichEmbed()
-                .setTitle("😎  **Propozycje !**")
-                .setDescription("Na tym kanale można zgłaszać swoje propozycje dodania rzeczy do Discorda.")
-                .setFooter("Zakaz trollowania, 60 sekund opóźnienia.")
+                .setTitle("🔔 **Ważne ogłoszenie !**")
+                .setDescription("@everyone Dostaliśmy nowy banner Discorda. https://imgur.com/a/q4hL4ru")
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
