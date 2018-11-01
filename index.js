@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "-"
+const PREFIX = "!!"
 
 
 var bot = new Discord.Client();
