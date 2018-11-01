@@ -28,9 +28,8 @@ bot.on("message", function(message) {
             break;
         case "embed":
             var embed = new Discord.RichEmbed()
-                .setTitle("📋 **Regulamin Discorda !**")
-                .setFooter("Regulamin może być edytowany bez powiadomienia o tym członków Discorda.")
-                .setDescription("**1.** Nie postuj rzeczy NSFW poza kanalami NSFW \n **2.** Zakaz reklamowania innych discordów stron www itp. \n **3.** Zakaz wyzywania użytkowników oraz administracji. \n **4.** Zakaz wklejania podejrzanych linków lub reflinków. \n **5.** Earrape, krzyczenie, skakanie po kanałach głosowych jest zabronione \n **6.** Gdy widzisz że ktoś łamie regulamin to oznacz @ADMIN ")
+                .setTitle("🔨 **Już Niedługo !**")
+                .setDescription("Więcej informacji na kanale #wazne-info")
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
