@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "!!"
+const PREFIX = "-"
 
 
 var bot = new Discord.Client();
@@ -8,7 +8,7 @@ var bot = new Discord.Client();
 bot.on("ready", function() {
     console.log('Bot dziala.');
     bot.user.setStatus('status jakis');
-    bot.user.setActivity('EvilBot v2 😈', { type: 'PLAYING' });
+    bot.user.setActivity('Evil Bot v2 😈', { type: 'PLAYING' });
 
 });
 
@@ -23,8 +23,8 @@ bot.on("message", function(message) {
     var args = message.content.substring(PREFIX.length).split(" ");
 
     switch (args[0].toLowerCase()) {
-        case "ping":
-            message.channel.sendMessage("Pong!");
+        case "pomoc":
+            message.channel.sendMessage("Wszystkie moje komendy! \n !!boy - Dostajesz range **Chłopak**");
             break;
         case "embed":
             var embed = new Discord.RichEmbed()
@@ -33,9 +33,12 @@ bot.on("message", function(message) {
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
+        case "boy":
+            a
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
+        let 
 
 });
 
