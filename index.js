@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "-"
+const PREFIX = "!!"
 
 
 var bot = new Discord.Client();
@@ -33,12 +33,9 @@ bot.on("message", function(message) {
                 .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
-        case "boy":
-            a
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
-        let 
 
 });
 
