@@ -30,8 +30,8 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
                 .setTitle("**📋 Regulamin Discorda !**")
                 .setDescription("**1.** Nie postuj rzeczy NSFW poza kanalami NSFW \n **2.** Zakaz reklamowania innych discordów stron www itp. \n **3.** Zakaz wyzywania użytkowników oraz administracji. \n **4.** Zakaz wklejania podejrzanych linków lub reflinków. \n **5.** Earrape, krzyczenie, skakanie po kanałach głosowych jest zabronione. \n **6.** Gdy widzisz że ktoś łamie regulamin to oznacz @⚜️ Zarząd \n **7.** Zakaz przenoszenia bota muzycznego na swoje kanały. \n **8.** Zakaz floodowania i spamowania.")
-                .setColor(0xff0000);
                 .setFooter("Regulamin może być zmieniony bez powiadomienia o tym członków Discorda")
+                .setColor(0xff0000);
             message.channel.sendEmbed(embed);
             break;
         default:
