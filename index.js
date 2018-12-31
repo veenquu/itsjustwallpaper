@@ -27,8 +27,8 @@ bot.on("message", function(message) {
             message.channel.sendMessage("Wszystkie moje komendy! \n Już niedługo !**");
             break;
         case "weryfikacja":
-            new Discord.RichEmbed(data);
-            .setTitle "XD";
+        const embed = new Discord.RichEmbed()
+            .setTitle("This is your title, it can hold 256 characters")
             break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
