@@ -27,7 +27,7 @@ bot.on("message", function(message) {
             message.channel.sendMessage("Wszystkie moje komendy! \n Już niedługo !**");
             break;
         case "weryfikacja":
-            message.channel.sendMessage("**Weryfikacja!** \n@💻 | CCCP "lider"");
+            message.channel.sendMessage("**Weryfikacja!** \n@Liderówka");
             break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
