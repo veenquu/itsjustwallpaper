@@ -31,7 +31,7 @@ bot.on("message", function(message) {
                 .setTitle("This is your title, it can hold 256 characters")
                 .setColor(0x00AE86)
                 .setDescription("This is the main body of text, it can hold 2048 characters.")
-                break;
+                message.channel.send({embed});
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
