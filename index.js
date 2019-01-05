@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "cccp!"
+const PREFIX = "drift!"
 
 
 var bot = new Discord.Client();
@@ -8,7 +8,7 @@ var bot = new Discord.Client();
 bot.on("ready", function() {
     console.log('Bot dziala.');
     bot.user.setStatus('status jakis');
-    bot.user.setActivity('cccp!pomoc', { type: 'PLAYING' });
+    bot.user.setActivity('drift!pomoc', { type: 'PLAYING' });
 
 });
 
@@ -30,7 +30,7 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
                 .setTitle("**Weryfikacja**")
                 .setColor(0x00CED1)
-                .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&529382012713304124>")
+                .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&527604678314426424>")
                 message.channel.send({embed});
                 break;
         default:
