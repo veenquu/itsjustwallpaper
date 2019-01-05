@@ -33,6 +33,11 @@ bot.on("message", function(message) {
                 .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&527604678314426424>")
                 message.channel.send({embed});
                 break;
+        case "xyz":
+             const embed = new Discord.RichEmbed()
+                  .setTitle ("fewfewf")
+                  message.channel.send({embed2});
+                  break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
