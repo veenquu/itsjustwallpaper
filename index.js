@@ -30,7 +30,7 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
                 .setTitle("**Handlingi**")
                 .setColor(0x00CED1)
-                .setDescription("Tutaj możecie wrzucać swoje handlingi z formułką \n ```Nazwa: \n Autor: \n Stopień zaawansowania \n Maksymalna prędkość samochodu:```")
+                .setDescription("Tutaj możecie wrzucać swoje handlingi z formułką: \n ```Nazwa: \nAutor: \nStopień zaawansowania \nMaksymalna prędkość samochodu: \nDownload: (najlepiej dać do skopiowania na pastebin)```")
                 message.channel.send({embed});
                 break;
         default:
