@@ -26,19 +26,13 @@ bot.on("message", function(message) {
         case "pomoc":
             message.channel.sendMessage("Wszystkie moje komendy! \n Już niedługo !**");
             break;
-        case "weryfikacja":
+        case "xxxx":
             const embed = new Discord.RichEmbed()
-                .setTitle("**Weryfikacja**")
+                .setTitle("**Handlingi**")
                 .setColor(0x00CED1)
-                .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&527604678314426424>")
+                .setDescription("Tutaj możecie wrzucać swoje handlingi z formułką \n ```Nazwa: \n Autor: \n Stopień zaawansowania \n Maksymalna prędkość samochodu:```")
                 message.channel.send({embed});
                 break;
-        case "xyz":
-             const secondembed = new Discord.RichEmbed()
-                  .setTitle ("fewfewf")
-                  .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&527604678314426424>")
-                  message.channel.send({secondembed});
-                  break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
