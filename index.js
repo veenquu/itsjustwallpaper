@@ -28,10 +28,11 @@ bot.on("message", function(message) {
             break;
         case "weryfikacja":
             const embed = new Discord.RichEmbed()
-                .setTitle("This is your title, it can hold 256 characters")
-                .setColor(0x00AE86)
-                .setDescription("This is the main body of text, it can hold 2048 characters.")
+                .setTitle("**Weryfikacja**")
+                .setColor(0x00CED1)
+                .setDescription("Niedługo ktoś z liderówki, zaakceptuje twoje zgłoszenie ! <@&529382012713304124>")
                 message.channel.send({embed});
+                break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
