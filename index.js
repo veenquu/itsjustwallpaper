@@ -23,11 +23,14 @@ bot.on("message", function(message) {
     var args = message.content.substring(PREFIX.length).split(" ");
 
     switch (args[0].toLowerCase()) {
-        case "pomoc"
-            .setTitle("thats how")
-            .setDescription("mafia works")
-            message.channel.send({embed});
-            break;
+        case "pomoc":
+            const embed = new Discord.RichEmbed()
+                .setTitle("📋 **Pomoc**")
+                .setColor(0x00CED1)
+                .setDescription("thats how")
+                .setFooter("mafia works")
+                message.channel.send({embed});
+                break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
