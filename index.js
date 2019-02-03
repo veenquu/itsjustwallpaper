@@ -35,7 +35,7 @@ bot.on("message", function(message) {
                 message.channel.send({embed});
                 break;
         case "xxxx":
-            const embed = new Discord.RichEmbed()
+            const otherEmbed = new Discord.RichEmbed()
                 .setTitle("XX")
                 .setColor(0x00CED1)
                 .setDescription("XDXD")
