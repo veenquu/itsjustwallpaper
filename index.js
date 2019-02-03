@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const PREFIX = "drift!"
+const PREFIX = "!!"
 
 
 var bot = new Discord.Client();
@@ -8,7 +8,7 @@ var bot = new Discord.Client();
 bot.on("ready", function() {
     console.log('Bot dziala.');
     bot.user.setStatus('status jakis');
-    bot.user.setActivity('drift!pomoc', { type: 'PLAYING' });
+    bot.user.setActivity('!!pomoc', { type: 'PLAYING' });
 
 });
 
@@ -28,9 +28,10 @@ bot.on("message", function(message) {
             break;
         case "xxxx":
             const embed = new Discord.RichEmbed()
-                .setTitle("**Handlingi**")
+                .setTitle("📋 **Regulamin**")
                 .setColor(0x00CED1)
-                .setDescription("Tutaj możecie wrzucać swoje handlingi z formułką: \n ```Nazwa: \nAutor: \nStopień zaawansowania \nMaksymalna prędkość samochodu: \nDownload: (najlepiej dać do skopiowania na pastebin)```")
+                .setDescription("**1.** Zachowanie: \n **1.1** Musisz być uprzejmy dla klienta i dla kolegów z pracy \n **2.** Wypłaty: \n **2.1** Aby otrzymać wypłatę muszisz conajmniej spędzić 30 minut na duty. \n **30 minut:** 200$ \n **60 minut** 500$ \n **Akcja:** Gwarantowane 250$ \n **3.** Reklamowanie: \n **3.1** Nie możesz reklamować discordów lub stron www bez pozwolenia.")
+                .setFooter("Regulamin może się w każdej chwili zmienić")
                 message.channel.send({embed});
                 break;
         default:
