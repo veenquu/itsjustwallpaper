@@ -26,6 +26,7 @@ bot.on("message", function(message) {
         case "pomoc"
             .setTitle("thats how")
             .setDescription("mafia works")
+            message.channel.send({embed});
             break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
