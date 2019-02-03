@@ -24,23 +24,8 @@ bot.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
         case "pomoc":
-            message.channel.sendMessage("Wszystkie moje komendy! \n Już niedługo !**");
+            message.channel.sendMessage("**Poradnik:** \n Regulamin znajdziesz na kanale: <#541721710425276437> \n Informacje o premiach znajdziesz na kanale: <#541723623530954839> \n <@&541720189440360476> <@&541720183807541278>");
             break;
-        case "regulamin":
-            const embed = new Discord.RichEmbed()
-                .setTitle("📋 **Regulamin**")
-                .setColor(0x00CED1)
-                .setDescription("**1.** Zachowanie: \n **1.1** Musisz być uprzejmy dla klienta i dla kolegów z pracy \n **2.** Wypłaty: \n **2.1** Aby otrzymać wypłatę muszisz conajmniej spędzić 30 minut na duty. \n **30 minut:** 200$ \n **60 minut** 500$ \n **Akcja:** Gwarantowane 250$ \n **3.** Reklamowanie: \n **3.1** Nie możesz reklamować discordów lub stron www bez pozwolenia.")
-                .setFooter("Regulamin może się w każdej chwili zmienić")
-                message.channel.send({embed});
-                break;
-        case "xxxx":
-            const otherEmbed = new Discord.RichEmbed()
-                .setTitle("XX")
-                .setColor(0x00CED1)
-                .setDescription("XDXD")
-                message.channel.send({otherEmbed});
-                break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
     }
