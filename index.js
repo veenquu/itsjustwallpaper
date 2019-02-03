@@ -24,7 +24,7 @@ bot.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
         case "pomoc":
-            message.channel.sendMessage("**Poradnik:** \n Regulamin znajdziesz na kanale: <#541721710425276437> \n Informacje o premiach znajdziesz na kanale: <#541723623530954839> \n <@&541720189440360476> <@&541720183807541278>");
+            message.channel.sendMessage("**Poradnik:** \nRegulamin znajdziesz na kanale: <#541721710425276437> \nInformacje o premiach znajdziesz na kanale: <#541723623530954839> \n<@&541720189440360476> <@&541720183807541278>");
             break;
         default:
             message.channel.sendMessage("Nieprawidlowa komenda!")
