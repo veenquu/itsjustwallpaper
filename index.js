@@ -27,8 +27,7 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
                 .setTitle("📋 **Pomoc**")
                 .setColor(0x00CED1)
-                .setDescription("thats how")
-                .setFooter("mafia works")
+                .setDescription("Regulamin znajdziesz na kanale: <#541721710425276437> \nInformacje o premiach znajdziesz na kanale: <#541723623530954839> \nCennik: XXX \nPoradnik: XXX \n<@&541720189440360476> <@&541720183807541278>")
                 message.channel.send({embed});
                 break;
         default:
